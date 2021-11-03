@@ -1,5 +1,5 @@
 program weight_calculation;
-var h, m, opt: integer;
+var h, m, opt, d: integer;
 begin
     write ('Enter height (cm): ');
     read (h);
@@ -8,7 +8,7 @@ begin
     opt:= h-100;
     if (m = opt) then write
      ('You have optimal weight.')
-    else if (m < opt) then write 
-    ('You should get better.') else 
-     write ('You should lose weight.');
+    else if (m < opt) then d:= opt-m write 
+    ('You should get better: ',d ,'kg') else 
+    d:= m-opt write ('You should lose weight: ',d ,'kg');
 end.
