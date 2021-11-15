@@ -11,4 +11,5 @@ begin
     else if (m < opt) then d:= opt-m write 
     ('You should get better: ',d ,'kg') else 
     d:= m-opt write ('You should lose weight: ',d ,'kg');
+    //Комментарий
 end.
